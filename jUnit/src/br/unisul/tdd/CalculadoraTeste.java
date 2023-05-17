@@ -17,10 +17,7 @@ public class CalculadoraTeste {
 		
 		soma = calc.somar(3, -2);
 		System.out.println(soma);
-		// 3, 0 
-		// 0, 0
-		// 3, -1
-		
+	
 
 	}
 	
