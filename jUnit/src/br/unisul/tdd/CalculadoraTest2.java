@@ -9,23 +9,36 @@ public class CalculadoraTest2 {
 	public void deveriaSomarDoisNumerosPositivos() {
 		
 		Calculadora calc = new Calculadora();
-		int valorA = 7;
+		int valorA = 6;
 		int valorB = 3;
 		
 		int soma = calc.somar(valorA, valorB);
 		
-		Assert.assertEquals(10, soma);
+		Assert.assertEquals(9, soma);
 	}
 	
 	@Test
-	public void deveriaSubtraisDoisNumerosPositivos() {
+	public void deveriaSubtrairDoisNumerosPositivos() {
 		
 		Calculadora calc = new Calculadora();
-		int valorA = 7;
+		int valorA = 6;
 		int valorB = 3;
 		
 		int subtrair = calc.subtracao(valorA, valorB);
 		
-		Assert.assertEquals(4, subtrair);
+		Assert.assertEquals(3, subtrair);
 	}
+	
+	@Test
+	public void deveriaDividirDoisNumerosPositivos() {
+		
+		Calculadora calc = new Calculadora();
+		int valorA = 6;
+		int valorB = 3;
+		
+		int dividir = calc.divisao(valorA, valorB);
+		
+		Assert.assertEquals(2, dividir);
+	}
+	
 }
