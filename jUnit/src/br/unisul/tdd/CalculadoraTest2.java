@@ -41,4 +41,16 @@ public class CalculadoraTest2 {
 		Assert.assertEquals(2, dividir);
 	}
 	
+	@Test
+	public void deveriaLancarExcecaoFalhaAoDividirUmNumeroPorZero() {
+		
+		Calculadora calc = new Calculadora();
+		int valorA = 6;
+		int valorB = 0;
+		
+		int dividir = calc.divisao(valorA, valorB);
+		
+		Assert.assertEquals(0, dividir);
+	}
+	
 }
